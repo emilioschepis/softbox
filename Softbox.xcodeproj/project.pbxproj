@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1AE7F6277C946C00B15CF4 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AE7F5277C946C00B15CF4 /* Color+Codable.swift */; };
 		BCA23EC7277C898C00154FF9 /* SoftboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23EC6277C898C00154FF9 /* SoftboxApp.swift */; };
 		BCA23EC9277C898C00154FF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23EC8277C898C00154FF9 /* ContentView.swift */; };
 		BCA23ECB277C898F00154FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA23ECA277C898F00154FF9 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1AE7F5277C946C00B15CF4 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		BCA23EC3277C898B00154FF9 /* Softbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA23EC6277C898C00154FF9 /* SoftboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftboxApp.swift; sourceTree = "<group>"; };
 		BCA23EC8277C898C00154FF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1AE7F4277C946000B15CF4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AE7F5277C946C00B15CF4 /* Color+Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BCA23EBA277C898B00154FF9 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +62,7 @@
 		BCA23EC5277C898B00154FF9 /* Softbox */ = {
 			isa = PBXGroup;
 			children = (
+				BC1AE7F4277C946000B15CF4 /* Extensions */,
 				BCA23EC6277C898C00154FF9 /* SoftboxApp.swift */,
 				BCA23EC8277C898C00154FF9 /* ContentView.swift */,
 				BCA23ECA277C898F00154FF9 /* Assets.xcassets */,
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA23EC9277C898C00154FF9 /* ContentView.swift in Sources */,
+				BC1AE7F6277C946C00B15CF4 /* Color+Codable.swift in Sources */,
 				BCA23EC7277C898C00154FF9 /* SoftboxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
