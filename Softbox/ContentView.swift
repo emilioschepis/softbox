@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import AppKit
 
 struct ContentView: View {
+    @State private var color = Color.accentColor
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack(alignment: .bottomTrailing) {
+            Rectangle()
+                .foregroundColor(color)
+            ColorPicker("Softbox Color", selection: $color)
+                .padding()
+                .background(Color(NSColor.textBackgroundColor).opacity(0.5))
+                .cornerRadius(8.0)
+                .padding()
+        }
     }
 }
 
