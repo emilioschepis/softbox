@@ -12,6 +12,7 @@ struct SoftboxApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(SoftboxManager())
         }
     }
 }

@@ -9,13 +9,13 @@ import SwiftUI
 import AppKit
 
 struct ContentView: View {
-    @State private var color = Color.accentColor
+    @EnvironmentObject private var manager: SoftboxManager
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             Rectangle()
-                .foregroundColor(color)
-            ColorPicker("Softbox Color", selection: $color)
+                .foregroundColor(manager.color)
+            ColorPicker("Softbox Color", selection: $manager.color)
                 .padding()
                 .background(Color(NSColor.textBackgroundColor).opacity(0.5))
                 .cornerRadius(8.0)

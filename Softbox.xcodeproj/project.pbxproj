@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC1AE7F6277C946C00B15CF4 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AE7F5277C946C00B15CF4 /* Color+Codable.swift */; };
+		BC1AE7F8277C9A4100B15CF4 /* SoftboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AE7F7277C9A4100B15CF4 /* SoftboxManager.swift */; };
 		BCA23EC7277C898C00154FF9 /* SoftboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23EC6277C898C00154FF9 /* SoftboxApp.swift */; };
 		BCA23EC9277C898C00154FF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23EC8277C898C00154FF9 /* ContentView.swift */; };
 		BCA23ECB277C898F00154FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA23ECA277C898F00154FF9 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		BC1AE7F5277C946C00B15CF4 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		BC1AE7F7277C9A4100B15CF4 /* SoftboxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftboxManager.swift; sourceTree = "<group>"; };
 		BCA23EC3277C898B00154FF9 /* Softbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA23EC6277C898C00154FF9 /* SoftboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftboxApp.swift; sourceTree = "<group>"; };
 		BCA23EC8277C898C00154FF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				BC1AE7F4277C946000B15CF4 /* Extensions */,
 				BCA23EC6277C898C00154FF9 /* SoftboxApp.swift */,
+				BC1AE7F7277C9A4100B15CF4 /* SoftboxManager.swift */,
 				BCA23EC8277C898C00154FF9 /* ContentView.swift */,
 				BCA23ECA277C898F00154FF9 /* Assets.xcassets */,
 				BCA23ECF277C898F00154FF9 /* Softbox.entitlements */,
@@ -153,6 +156,7 @@
 				BCA23EC9277C898C00154FF9 /* ContentView.swift in Sources */,
 				BC1AE7F6277C946C00B15CF4 /* Color+Codable.swift in Sources */,
 				BCA23EC7277C898C00154FF9 /* SoftboxApp.swift in Sources */,
+				BC1AE7F8277C9A4100B15CF4 /* SoftboxManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
