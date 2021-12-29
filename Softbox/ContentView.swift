@@ -15,11 +15,46 @@ struct ContentView: View {
         ZStack(alignment: .bottomTrailing) {
             Rectangle()
                 .foregroundColor(manager.color)
-            ColorPicker("Softbox Color", selection: $manager.color)
-                .padding()
-                .background(Color(NSColor.textBackgroundColor).opacity(0.5))
-                .cornerRadius(8.0)
-                .padding()
+            VStack(alignment: .trailing) {
+                ColorPicker("Softbox Color", selection: $manager.color)
+                    .padding(.bottom, 4.0)
+                HStack(alignment: .top) {
+                    Button(action: { manager.addToFavorites() }) {
+                        ZStack {
+                            Circle()
+                                .frame(width: 32.0, height: 32.0, alignment: .center)
+                                .foregroundColor(Color(NSColor.textBackgroundColor))
+                            Image(systemName: "plus")
+                        }
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    ForEach(manager.favorites, id: \.description) { favorite in
+                        VStack {
+                            Button(action: { manager.color = favorite }) {
+                                Circle()
+                                    .frame(width: 32.0, height: 32.0, alignment: .center)
+                                    .foregroundColor(favorite)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                            Button(action: { manager.removeFromFavorites(favorite) }) {
+                                ZStack {
+                                    Circle()
+                                        .frame(width: 24.0, height: 24.0, alignment: .center)
+                                        .foregroundColor(Color(NSColor.textBackgroundColor))
+                                    Image(systemName: "trash")
+                                        .foregroundColor(.red)
+                                }
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                        }
+                    }
+                }
+            }
+            .padding()
+            .background(Color(NSColor.textBackgroundColor).opacity(0.5))
+            .cornerRadius(8.0)
+            .padding()
         }
     }
 }
